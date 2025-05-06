@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="valentine-confession.css">
+        <title>Carta 0 "IDK"</title>
+    </head>
+    <body>
+        <p class="instruction">Presioname</p>
+        <div class="container">
+            <label>
+            <div class="heart">
+                 <img src="https://imgur.com/wsEzs7Y.jpg" alt="Corazón">
+<span class="heart-text">Presioname</span>
+            </div>
+            <input id="messageState" type="checkbox" style="display:none"/>
+            </label>
+            <div class="message">
+                <h1 style="font-family: Cinzel, serif; font-size: 40px; letter-spacing: 1.2px;">Para:𝓴𝓪𝓻𝓮𝓷,</h1>
+                <p> 
+                    <span>
+                        &emsp; Hey, enhorabuena. Así que ya tienes novio, ¿no? Ya no tiene caso que esté aquí. Yo te lo dije: "Prefiero no estar cuando eso pase."
+                    </span>
+                    <br> <br>
+                    <span>
+                        &emsp;  Así que de mí no necesitas. Tal vez yo sí necesite de ti, pero por mí no te preocupes, estaré bien. En el peor de los casos, seguiré con las cortadas, pero estaré bien… claro, hasta donde me diste permiso: hasta julio. Total, yo no importo, jamás lo hice. Y tampoco es como que me importe mucho a mí mismo lo que me pase, pero “all is ok”.
+
+¿Qué haré? Nunca sé lo que voy a hacer… pero bueno, mi trabajo aquí llegó a su fin.	
+                    </span>      
+                </p>
+                <br>
+                <div class="sincere">
+                    <p style="font-weight: bold;"> </p>
+                    <p>ATTE: Haytham "!$%"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agregar el audio -->
+        <audio id="audioPlayer">
+            <source src="Dark%20Side%20Español.mp3" type="audio/mp3">
+            Tu navegador no soporta el formato de audio.
+        </audio>
+
+        <script src="jquery.js"></script>
+        <script src="jquery2.1.js"></script>
+        <script defer src="valentine-confession.js"></script>
+
+        <script>
+            // Configurar el volumen a 0.2
+            var audio = document.getElementById('audioPlayer');
+            audio.volume = 0.2;
+
+            // Variable para saber si la música ya se reprodujo
+            var hasPlayed = false;
+
+            // Hacer que la música suene solo una vez al hacer clic en cualquier parte de la página
+            document.body.addEventListener('click', function() {
+                if (!hasPlayed) {
+                    audio.play(); // Reproducir música solo si no ha sido reproducida
+                    hasPlayed = true; // Marcar que la música ha sido reproducida
+                }
+            });
+        </script>
+    </body>
+</html>
