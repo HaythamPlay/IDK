@@ -48,11 +48,17 @@ body {
 }
 
 .heart > img {
-    width: 200px; /* Ahora puedes ajustar el tamaño libremente */
+    width: 100px; /* Tamaño de la imagen */
     height: auto;
-    display: block;
-    margin: 0 auto;
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    display: block; /* Evita problemas de alineación que pueden generar líneas */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
+
 .heart-text {
     font-family: "Quicksand", sans-serif;
     font-size: 1rem;
